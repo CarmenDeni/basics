@@ -13,5 +13,5 @@ def flatten(xss):
     return [x for xs in xss for x in xs]
 
 def json_print(data):
-    print(json.dumps(data, indent=2))
+    print(json.dumps(data, indent=2, ensure_ascii=False))
   
